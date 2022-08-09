@@ -11,7 +11,7 @@
             Console.WriteLine("Welcome to Generics Problem");
             while(check)
             {
-                Console.WriteLine("\n1.Maximum of Integer\n 2.Maximum of Float\n");
+                Console.WriteLine("\n1.Maximum of Integer\n 2.Maximum of Float\n3. Maximu of String");
                 int Option=Convert.ToInt32(Console.ReadLine());
                 switch(Option)
                 {
@@ -31,6 +31,11 @@
                         //Third case
 
                         problem.MaxFloat(8.5f, 1.2f, 19.0f);
+                        break;
+                    case 3:
+                        problem.MaxString("Banana", "Apple", "Peach");
+                        problem.MaxString("Apple", "Banana", "Peach");
+                        problem.MaxString("Apple", "Peach", "Banana");
                         break;
                 }
             }
