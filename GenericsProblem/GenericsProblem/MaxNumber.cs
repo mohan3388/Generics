@@ -28,5 +28,25 @@ namespace GenericsProblem
                 return third;
             }
         }
+        public float MaxFloat(float first, float second, float third)
+        {
+
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
+            {
+                Console.WriteLine("First Number is Greater " + first);
+                return first;
+
+            }
+            if (second.CompareTo(first) >= 0 && second.CompareTo(third) > 0)
+            {
+                Console.WriteLine("Second Number is Greater " + second);
+                return second;
+            }
+            else
+            {
+                Console.Write("Greatest Number is third " + third);
+                return third;
+            }
+        }
     }
 }
