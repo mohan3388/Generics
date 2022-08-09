@@ -17,7 +17,7 @@ namespace GenericsProblem
                 return first;
 
             }
-            if (second.CompareTo(first) >= 0 && second.CompareTo(third) > 0)
+            if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
             {
                 Console.WriteLine("Second Number is Greater "+second);
                 return second;
@@ -37,7 +37,7 @@ namespace GenericsProblem
                 return first;
 
             }
-            if (second.CompareTo(first) >= 0 && second.CompareTo(third) > 0)
+            if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
             {
                 Console.WriteLine("Second Number is Greater " + second);
                 return second;
@@ -59,7 +59,7 @@ namespace GenericsProblem
                 Console.WriteLine("First String is Greater: "+first);
                 return first;
             }
-            if (length2.CompareTo(length1) >= 0 && length2.CompareTo(length3) > 0)
+            if (length2.CompareTo(length1) > 0 && length2.CompareTo(length3) > 0)
             {
                 Console.WriteLine("Second string is Greater: "+second);
                 return second;
