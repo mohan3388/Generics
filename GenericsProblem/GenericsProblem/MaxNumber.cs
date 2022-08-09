@@ -17,7 +17,7 @@ namespace GenericsProblem
                 return first;
 
             }
-            if (second.CompareTo(first) >= 0 && second.CompareTo(third) > 0)
+            if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
             {
                 Console.WriteLine("Second Number is Greater "+second);
                 return second;
