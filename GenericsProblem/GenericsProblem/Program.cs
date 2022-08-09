@@ -41,12 +41,12 @@
                         maxString.MaxInString("Apple", "Peach", "Banana");
                         break;
                     case 4:
-                        Refactor<int> refactor = new Refactor<int>(8, 12, 16);
-                        refactor.FindMaxAll();
-                        Refactor<float> refactor2 = new Refactor<float>(8.5f, 10.2f, 15.04f);
-                        refactor2.FindMaxAll();
-                        Refactor<string> refactor3 = new Refactor<string>("Apple", "Peach", "Banana");
-                        refactor3.FindMaxAll();
+                        Refactor<int> refactor = new Refactor<int>();
+                        refactor.FindMaxAll(8, 12, 16);
+                        Refactor<float> refactor2 = new Refactor<float>();
+                        refactor2.FindMaxAll(8.5f, 10.2f, 15.04f);
+                        Refactor<string> refactor3 = new Refactor<string>();
+                        refactor3.FindMaxAll("Apple", "Peach", "Banana");
                         break;
 
                 }

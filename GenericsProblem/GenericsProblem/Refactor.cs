@@ -8,14 +8,8 @@ namespace GenericsProblem
 {
     public class Refactor<T> where T : IComparable<T>
     {
-        public T first, second, third;
-        public Refactor(T first, T second, T third)
-        {
-            this.first = first;
-            this.second = second;
-            this.third = third;
-        }
-        public T FindMaxAll()
+       
+        public T FindMaxAll(T first, T second, T third)
         {
 
 
