@@ -11,7 +11,7 @@
             Console.WriteLine("Welcome to Generics Problem");
             while(check)
             {
-                Console.WriteLine("\n1.Maximum of Integer\n 2.Maximum of Float\n3. Maximum of String\n4.Refactor above 3 UC's\n");
+                Console.WriteLine("\n1.Maximum of Integer\n 2.Maximum of Float\n3. Maximum of String\n4.Refactor above 3 UC's\n5.More then three parameters\n6.extend All find max");
                 int Option=Convert.ToInt32(Console.ReadLine());
                 switch(Option)
                 {
@@ -48,7 +48,20 @@
                         Refactor<string> refactor3 = new Refactor<string>();
                         refactor3.FindMaxAll("Apple", "Peach", "Banana");
                         break;
-
+                    case 5:
+                        FindMaxGenerics<int> find = new FindMaxGenerics<int>(10, 15, 20,9);
+                        find.FindInMax();
+                        FindMaxGenerics<float> find2 = new FindMaxGenerics<float>(10.1f, 18.22f, 15.55f,16.9f);
+                        find2.FindInMax();
+                        FindMaxGenerics<string> find3 = new FindMaxGenerics<string>("banana", "apple", "peach","pinapple");
+                        find3.FindInMax();
+                        break;
+                    case 6:
+                        ExtendAllMax extend = new ExtendAllMax();
+                        extend.FindMax(15, 9, 27,14);
+                        extend.MaxInFloat(15.7f, 6.4f, 28.9f,31.4f);
+                        extend.MaxInString("banana", "apple", "peach", "pinapple");
+                        break;
                 }
             }
            
