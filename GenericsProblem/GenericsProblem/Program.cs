@@ -24,6 +24,7 @@
                         //Third case
                         problem.FindMax(5, 10, 17);
                         break;
+                        
                     case 2:
                         MaxFloat maxFloat = new MaxFloat();
                         //First Test case 
